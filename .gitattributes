@@ -1,0 +1,9 @@
+*.pth filter=lfs diff=lfs merge=lfs -text
+processed_data/*.csv filter=lfs diff=lfs merge=lfs -text
+raw_data/** filter=lfs diff=lfs merge=lfs -text
+venv/** filter=lfs diff=lfs merge=lfs -text
+*.avro filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+Miniforge3-MacOSX-arm64.sh filter=lfs diff=lfs merge=lfs -text
