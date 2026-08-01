@@ -1,0 +1,39 @@
+Loaded graphs: 720
+Train: 503 | Val: 109 | Test: 108
+Train positives: 143 | Val positives: 71 | Test positives: 30
+pos_weight: 4413.1259765625
+device: cpu
+Epoch 01 | Train 76.0148 | Val F1 0.0038 | Recall 0.9155 | Precision 0.0019
+Epoch 02 | Train 7.0621 | Val F1 0.0050 | Recall 0.8169 | Precision 0.0025
+Epoch 03 | Train 2.5795 | Val F1 0.0000 | Recall 0.0000 | Precision 0.0000
+Epoch 04 | Train 3.8350 | Val F1 0.0102 | Recall 0.6056 | Precision 0.0051
+Epoch 05 | Train 2.4319 | Val F1 0.0231 | Recall 0.4225 | Precision 0.0119
+Epoch 06 | Train 2.6289 | Val F1 0.0139 | Recall 0.5352 | Precision 0.0070
+Epoch 07 | Train 1.2641 | Val F1 0.0297 | Recall 0.6197 | Precision 0.0152
+Epoch 08 | Train 0.7025 | Val F1 0.0101 | Recall 0.7465 | Precision 0.0051
+Epoch 09 | Train 0.6604 | Val F1 0.0313 | Recall 0.6479 | Precision 0.0160
+Epoch 10 | Train 0.6011 | Val F1 0.0151 | Recall 0.5352 | Precision 0.0076
+Epoch 11 | Train 0.5831 | Val F1 0.0268 | Recall 0.7465 | Precision 0.0137
+Epoch 12 | Train 0.2598 | Val F1 0.0130 | Recall 0.7465 | Precision 0.0066
+Epoch 13 | Train 0.8724 | Val F1 0.0266 | Recall 0.5493 | Precision 0.0136
+Epoch 14 | Train 0.4600 | Val F1 0.0180 | Recall 0.7465 | Precision 0.0091
+Epoch 15 | Train 0.3394 | Val F1 0.0330 | Recall 0.7465 | Precision 0.0169
+Epoch 16 | Train 0.4408 | Val F1 0.0519 | Recall 0.6479 | Precision 0.0270
+Epoch 17 | Train 0.7387 | Val F1 0.0291 | Recall 0.5775 | Precision 0.0149
+Epoch 18 | Train 2.2354 | Val F1 0.0220 | Recall 0.2394 | Precision 0.0115
+Epoch 19 | Train 3.0996 | Val F1 0.0096 | Recall 0.8028 | Precision 0.0048
+Epoch 20 | Train 0.8614 | Val F1 0.0194 | Recall 1.0000 | Precision 0.0098
+Epoch 21 | Train 3.5151 | Val F1 0.0089 | Recall 0.9859 | Precision 0.0045
+Epoch 22 | Train 1.4120 | Val F1 0.0273 | Recall 0.8732 | Precision 0.0139
+Epoch 23 | Train 1.0448 | Val F1 0.0128 | Recall 0.7465 | Precision 0.0065
+Epoch 24 | Train 0.8256 | Val F1 0.0246 | Recall 0.7324 | Precision 0.0125
+Epoch 25 | Train 0.4100 | Val F1 0.0504 | Recall 0.6761 | Precision 0.0262
+Epoch 26 | Train 0.3110 | Val F1 0.0367 | Recall 0.7324 | Precision 0.0188
+Epoch 27 | Train 0.8670 | Val F1 0.0444 | Recall 0.4789 | Precision 0.0233
+Epoch 28 | Train 0.6101 | Val F1 0.0251 | Recall 0.7465 | Precision 0.0127
+Epoch 29 | Train 0.1851 | Val F1 0.0190 | Recall 0.7465 | Precision 0.0096
+Epoch 30 | Train 0.2745 | Val F1 0.0345 | Recall 0.7465 | Precision 0.0176
+
+Best validation F1: 0.05191873589164785
+Saved models/conflict_gat_v2.pth
+DONE: 03_train_gat.py
