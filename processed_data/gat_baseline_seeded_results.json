@@ -1,0 +1,11 @@
+{
+  "model": "GAT",
+  "feature_set": "trajectory_only",
+  "n_node_features": 6,
+  "n_edge_features": 5,
+  "precision": 0.0013519603424966202,
+  "recall": 0.1,
+  "f1": 0.0026678523788350376,
+  "roc_auc": 0.9155923324934713,
+  "best_val_f1": 0.030272452068617558
+}

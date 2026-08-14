@@ -1,0 +1,39 @@
+{
+    "model": "XGBoost",
+    "feature_set": "observable_state_no_cpa",
+    "features": [
+        "horizontal_distance",
+        "vertical_distance",
+        "closing_rate",
+        "bearing_difference"
+    ],
+    "removed_features": [
+        "time_to_cpa",
+        "dcpa"
+    ],
+    "total_graphs": 72841,
+    "train_graphs": 50988,
+    "validation_graphs": 10926,
+    "test_graphs": 10927,
+    "test_samples": 81270,
+    "train_positive": 8552,
+    "train_negative": 421616,
+    "validation_positive": 3218,
+    "test_positive": 1788,
+    "best_validation_threshold": 0.7900000000000001,
+    "best_validation_f1": 0.8374558303886925,
+    "precision": 0.7313997477931904,
+    "recall": 0.6487695749440716,
+    "f1": 0.6876111440426793,
+    "roc_auc": 0.9932246700067501,
+    "confusion_matrix": [
+        [
+            79056,
+            426
+        ],
+        [
+            628,
+            1160
+        ]
+    ]
+}

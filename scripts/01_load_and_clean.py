@@ -45,7 +45,7 @@ region_final = combined_region[
 region_final = region_final.sort_values(["icao24", "source_day", "time"])
 region_final["dt"] = region_final.groupby(["icao24", "source_day"])["time"].diff()
 region_final["dalt"] = region_final.groupby(["icao24", "source_day"])["baroaltitude"].diff()
-region_final["climb_rate_fpm"] = region_final["dalt"] / region_final["dt"] * 60
+region_final["climb_rate_fpm"] = (region_final["dalt"] * 3.28084) / region_final["dt"] * 60
 
 MAX_CLIMB_RATE = 6000
 region_final = region_final[

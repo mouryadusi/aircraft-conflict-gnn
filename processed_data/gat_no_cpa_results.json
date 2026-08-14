@@ -1,0 +1,35 @@
+{
+    "model": "GAT",
+    "features": "no_cpa",
+    "edge_features": [
+        "distance_now",
+        "vertical_distance",
+        "relative_speed",
+        "relative_heading"
+    ],
+    "excluded_features": [
+        "tcpa",
+        "dcpa"
+    ],
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "train_graphs": 50988,
+    "validation_graphs": 10926,
+    "test_graphs": 10927,
+    "train_edges": 430168,
+    "train_positive": 8552,
+    "validation_edges": 162748,
+    "validation_positive": 3218,
+    "test_edges": 81270,
+    "test_positive": 1788,
+    "best_validation_f1": 0.6426000423459666,
+    "test_results": {
+        "loss": 0.15234438141715678,
+        "precision": 0.5525304292120435,
+        "recall": 0.964765100671141,
+        "f1": 0.7026476578411406,
+        "roc_auc": 0.9946095107318771
+    }
+}

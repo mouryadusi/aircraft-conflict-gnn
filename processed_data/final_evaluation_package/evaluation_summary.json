@@ -1,0 +1,19 @@
+{
+    "best_f1": {
+        "model": "GCN",
+        "features": "Trajectory",
+        "value": 0.8418616610953973
+    },
+    "best_roc_auc": {
+        "model": "GAT",
+        "features": "Trajectory + CPA",
+        "value": 0.9985941022088943
+    },
+    "best_precision": {
+        "model": "GCN",
+        "features": "Trajectory",
+        "value": 0.7791527843883865
+    },
+    "output_directory": "/Users/Mourya/projects/aircraft-conflict-gnn/processed_data/final_evaluation_package",
+    "zip_package": "/Users/Mourya/projects/aircraft-conflict-gnn/processed_data/final_evaluation_package.zip"
+}

@@ -1,0 +1,59 @@
+import json
+import pandas as pd
+
+
+# ============================================================
+# FINAL LARGE-DATASET RESULTS TABLE
+# ============================================================
+
+results = [
+    {
+        "Model": "GCN",
+        "Features": "Trajectory",
+        "Precision": 0.7791527843883865,
+        "Recall": 0.9155480984340044,
+        "F1": 0.8418616610953973,
+        "ROC_AUC": 0.9984044760292694,
+    },
+    {
+        "Model": "GAT",
+        "Features": "Trajectory + CPA",
+        "Precision": 0.42139995286353993,
+        "Recall": 1.0,
+        "F1": 0.5929364947769856,
+        "ROC_AUC": 0.9985941022088943,
+    },
+    {
+        "Model": "GAT",
+        "Features": "CPA-only",
+        "Precision": 0.13539816173630956,
+        "Recall": 0.9804250559284117,
+        "F1": 0.23793688496776383,
+        "ROC_AUC": 0.9679976118578084,
+    },
+    {
+        "Model": "GAT",
+        "Features": "No-CPA",
+        "Precision": 0.49902152641878667,
+        "Recall": 0.9983221476510067,
+        "F1": 0.6654240447343895,
+        "ROC_AUC": 0.9971011474352359,
+    },
+]
+
+
+df = pd.DataFrame(results)
+
+print()
+print("=" * 90)
+print("CORRECTED LARGE-DATASET RESULTS")
+print("=" * 90)
+print(df.to_string(index=False))
+
+output_path = "processed_data/final_results_table.csv"
+df.to_csv(output_path, index=False)
+
+print()
+print(f"Saved: {output_path}")
+print("=" * 90)
+

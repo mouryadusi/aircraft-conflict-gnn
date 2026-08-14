@@ -1,0 +1,42 @@
+{
+    "rows": 337093,
+    "positive_labels": 6779,
+    "positive_rate": 0.020110177310119166,
+    "naive_dcpa_auc": 0.877048,
+    "interpretation": "The DCPA-only diagnostic produced ROC-AUC = 0.877048. This demonstrates that DCPA is strongly predictive of the conflict label, but does not by itself prove deterministic label leakage. The CPA-only GAT is therefore treated as an ablation demonstrating the predictive contribution of CPA geometry.",
+    "methodological_status": "CPA-inclusive configurations are treated as diagnostic ablations. The No-CPA configuration represents the observable-state-only formulation.",
+    "dcpa_distribution": {
+        "count": {
+            "0": 330314.0,
+            "1": 6779.0
+        },
+        "mean": {
+            "0": 5968.057969065935,
+            "1": 1300.2173866035905
+        },
+        "std": {
+            "0": 3077.7151085503315,
+            "1": 1507.282328057898
+        },
+        "min": {
+            "0": 0.005975244618873914,
+            "1": 0.1523315956979214
+        },
+        "25%": {
+            "0": 3603.0064577256694,
+            "1": 274.4739757328266
+        },
+        "50%": {
+            "0": 7375.9580769568565,
+            "1": 543.9181735527326
+        },
+        "75%": {
+            "0": 8280.182155805796,
+            "1": 1855.4655638843456
+        },
+        "max": {
+            "0": 9999.993603015582,
+            "1": 4997.057115115583
+        }
+    }
+}

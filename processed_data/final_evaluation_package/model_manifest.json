@@ -1,0 +1,22 @@
+{
+    "GCN": {
+        "path": "/Users/Mourya/projects/aircraft-conflict-gnn/models/conflict_gcn_large.pth",
+        "exists": true,
+        "size_bytes": 56871
+    },
+    "GAT Trajectory + CPA": {
+        "path": "/Users/Mourya/projects/aircraft-conflict-gnn/models/conflict_gat_v2.pth",
+        "exists": true,
+        "size_bytes": 84067
+    },
+    "GAT CPA-only": {
+        "path": "/Users/Mourya/projects/aircraft-conflict-gnn/models/conflict_gat_cpa_only.pth",
+        "exists": true,
+        "size_bytes": 80487
+    },
+    "GAT No-CPA": {
+        "path": "/Users/Mourya/projects/aircraft-conflict-gnn/models/conflict_gat_no_cpa.pth",
+        "exists": true,
+        "size_bytes": 82491
+    }
+}

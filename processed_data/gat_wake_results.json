@@ -1,0 +1,11 @@
+{
+  "model": "GAT",
+  "feature_set": "trajectory+phase+wake",
+  "n_node_features": 13,
+  "n_edge_features": 9,
+  "precision": 0.0025670945157526253,
+  "recall": 0.36666666666666664,
+  "f1": 0.0050984936268829665,
+  "roc_auc": 0.8226698933707058,
+  "best_val_f1": 0.041530944625407164
+}

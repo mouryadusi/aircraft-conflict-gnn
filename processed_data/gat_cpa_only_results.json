@@ -1,0 +1,17 @@
+{
+  "model": "GAT",
+  "feature_set": "CPA-only",
+  "edge_features": [
+    "tcpa",
+    "dcpa"
+  ],
+  "node_feature_dimension": 6,
+  "edge_feature_dimension": 2,
+  "seed": 42,
+  "best_val_f1": 0.21695579589170355,
+  "loss": 0.2938611096803529,
+  "precision": 0.13539816173630956,
+  "recall": 0.9804250559284117,
+  "f1": 0.23793688496776383,
+  "roc_auc": 0.9679976118578084
+}

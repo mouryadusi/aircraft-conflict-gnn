@@ -1,0 +1,34 @@
+{
+    "model": "XGBoost",
+    "feature_set": "six edge-level graph features",
+    "n_graphs": 72841,
+    "train_graphs": 50988,
+    "validation_graphs": 10926,
+    "test_graphs": 10927,
+    "train_samples": 430168,
+    "validation_samples": 162748,
+    "test_samples": 81270,
+    "train_positive": 8552,
+    "train_negative": 421616,
+    "validation_positive": 3218,
+    "validation_negative": 159530,
+    "test_positive": 1788,
+    "test_negative": 79482,
+    "scale_pos_weight": 49.30028063610851,
+    "best_validation_threshold": 0.31000000000000005,
+    "best_validation_f1": 1.0,
+    "precision": 0.9988826815642458,
+    "recall": 1.0,
+    "f1": 0.9994410285075461,
+    "roc_auc": 0.9999999999999999,
+    "confusion_matrix": [
+        [
+            79480,
+            2
+        ],
+        [
+            0,
+            1788
+        ]
+    ]
+}

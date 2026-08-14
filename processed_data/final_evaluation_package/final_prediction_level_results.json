@@ -1,0 +1,60 @@
+{
+    "evaluation_protocol": "Prediction-level evaluation on each model's respective final test population.",
+    "comparison_warning": "GCN and GAT prediction files do not contain a common edge identifier and have different test-population sizes and class distributions. Therefore, results must not be interpreted as a same-edge paired comparison.",
+    "GCN": {
+        "samples": 81270,
+        "positive_labels": 1788,
+        "negative_labels": 79482,
+        "positive_predictions": 2019,
+        "negative_predictions": 79251,
+        "label_rate": 0.022000738279808047,
+        "prediction_rate": 0.02484311554078996,
+        "precision": 0.6503219415552254,
+        "recall": 0.7343400447427293,
+        "f1": 0.6897819805621224,
+        "roc_auc": 0.9862026468981735,
+        "tn": 78776,
+        "fp": 706,
+        "fn": 475,
+        "tp": 1313,
+        "confusion_matrix": [
+            [
+                78776,
+                706
+            ],
+            [
+                475,
+                1313
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.99      0.99      0.99     79482\n           1       0.65      0.73      0.69      1788\n\n    accuracy                           0.99     81270\n   macro avg       0.82      0.86      0.84     81270\nweighted avg       0.99      0.99      0.99     81270\n"
+    },
+    "GAT": {
+        "samples": 130899,
+        "positive_labels": 30,
+        "negative_labels": 130869,
+        "positive_predictions": 2094,
+        "negative_predictions": 128805,
+        "label_rate": 0.00022918433295899892,
+        "prediction_rate": 0.015997066440538124,
+        "precision": 0.004775549188156638,
+        "recall": 0.3333333333333333,
+        "f1": 0.009416195856873822,
+        "roc_auc": 0.9419523849549294,
+        "tn": 128785,
+        "fp": 2084,
+        "fn": 20,
+        "tp": 10,
+        "confusion_matrix": [
+            [
+                128785,
+                2084
+            ],
+            [
+                20,
+                10
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      0.98      0.99    130869\n           1       0.00      0.33      0.01        30\n\n    accuracy                           0.98    130899\n   macro avg       0.50      0.66      0.50    130899\nweighted avg       1.00      0.98      0.99    130899\n"
+    }
+}
