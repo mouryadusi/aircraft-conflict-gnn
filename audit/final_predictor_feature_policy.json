@@ -1,0 +1,30 @@
+{
+  "status": "AUDIT_POLICY",
+  "allowed_current_state": [
+    "latitude",
+    "longitude",
+    "altitude",
+    "speed",
+    "heading",
+    "vertical_rate",
+    "track",
+    "relative_position",
+    "relative_velocity",
+    "relative_speed",
+    "relative_heading",
+    "distance",
+    "bearing"
+  ],
+  "excluded": [
+    "tcpa",
+    "dcpa",
+    "future_position",
+    "future_altitude",
+    "future_speed",
+    "future_heading",
+    "future_trajectory_statistics",
+    "conflict_label",
+    "label_generation_variables"
+  ],
+  "principle": "Features must be computable exclusively from information available at prediction time."
+}

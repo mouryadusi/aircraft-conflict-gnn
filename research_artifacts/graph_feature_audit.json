@@ -1,0 +1,65 @@
+{
+  "train": {
+    "type": "Data",
+    "attributes": [
+      "time",
+      "edge_attr",
+      "edge_index",
+      "x",
+      "y"
+    ],
+    "node_feature_shape": [
+      7,
+      6
+    ],
+    "edge_feature_shape": [
+      10,
+      6
+    ],
+    "label_shape": [
+      10
+    ]
+  },
+  "validation": {
+    "type": "Data",
+    "attributes": [
+      "time",
+      "edge_attr",
+      "edge_index",
+      "x",
+      "y"
+    ],
+    "node_feature_shape": [
+      2,
+      6
+    ],
+    "edge_feature_shape": [
+      2,
+      6
+    ],
+    "label_shape": [
+      2
+    ]
+  },
+  "test": {
+    "type": "Data",
+    "attributes": [
+      "time",
+      "edge_attr",
+      "edge_index",
+      "x",
+      "y"
+    ],
+    "node_feature_shape": [
+      9,
+      6
+    ],
+    "edge_feature_shape": [
+      18,
+      6
+    ],
+    "label_shape": [
+      18
+    ]
+  }
+}

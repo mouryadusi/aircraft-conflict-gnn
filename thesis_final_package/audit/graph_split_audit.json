@@ -1,0 +1,29 @@
+{
+  "train": {
+    "graphs": 50988,
+    "time_min": 1496620801,
+    "time_max": 1496681957,
+    "total_edges": 430168,
+    "total_nodes": 293010,
+    "positive_edges": 8552,
+    "positive_rate": 0.019880604786966953
+  },
+  "validation": {
+    "graphs": 10926,
+    "time_min": 1496681958,
+    "time_max": 1496693254,
+    "total_edges": 162748,
+    "total_nodes": 95652,
+    "positive_edges": 3218,
+    "positive_rate": 0.019772900435028388
+  },
+  "test": {
+    "graphs": 10927,
+    "time_min": 1496693255,
+    "time_max": 1496707199,
+    "total_edges": 81270,
+    "total_nodes": 54833,
+    "positive_edges": 1788,
+    "positive_rate": 0.022000738279808047
+  }
+}
