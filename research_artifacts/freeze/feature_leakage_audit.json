@@ -1,0 +1,259 @@
+{
+  "audit": "feature_leakage_audit",
+  "status": "PRELIMINARY_SOURCE_SCAN",
+  "features": [
+    {
+      "feature": "latitude",
+      "classification": "observable_current_state",
+      "source_scripts": [
+        "07B_process_weather.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "longitude",
+      "classification": "observable_current_state",
+      "source_scripts": [
+        "07B_process_weather.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "altitude",
+      "classification": "observable_current_state",
+      "source_scripts": [
+        "01_load_and_clean.py",
+        "03_clean_state_vectors.py",
+        "07_phase_features.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "speed",
+      "classification": "observable_current_state",
+      "source_scripts": [
+        "06_weather_analysis.py",
+        "07B_process_weather.py",
+        "18_final_evaluation_package.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "heading",
+      "classification": "observable_current_state",
+      "source_scripts": [
+        "02_build_graphs_old.py",
+        "02_download_state_vectors.py",
+        "05A_build_candidate_pairs.py",
+        "07_phase_features.py",
+        "13_build_wake_graphs.py",
+        "18_final_evaluation_package.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "vertical_rate",
+      "classification": "observable_current_state",
+      "source_scripts": [],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "track",
+      "classification": "observable_current_state",
+      "source_scripts": [],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "timestamp",
+      "classification": "observable_current_state",
+      "source_scripts": [
+        "02_download_state_vectors.py",
+        "05A_build_candidate_pairs.py",
+        "17_train_gat_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "aircraft_id",
+      "classification": "identifier",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "flight_id",
+      "classification": "identifier",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "trajectory_id",
+      "classification": "identifier",
+      "source_scripts": [
+        "04_build_trajectories.py"
+      ],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "distance",
+      "classification": "derived_current_state",
+      "source_scripts": [
+        "05A_build_candidate_pairs.py",
+        "06_compute_cpa.py",
+        "20_train_xgboost_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "bearing",
+      "classification": "derived_current_state",
+      "source_scripts": [
+        "20_train_xgboost_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "relative_position",
+      "classification": "derived_current_state",
+      "source_scripts": [],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "relative_velocity",
+      "classification": "derived_current_state",
+      "source_scripts": [],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "relative_speed",
+      "classification": "derived_current_state",
+      "source_scripts": [
+        "02_build_graphs.py",
+        "02_build_graphs_cpa.py",
+        "05A_build_candidate_pairs.py",
+        "16_gat_feature_ablation_large.py",
+        "16_train_gat_cpa_only.py",
+        "17_train_gat_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "relative_heading",
+      "classification": "derived_current_state",
+      "source_scripts": [
+        "02_build_graphs.py",
+        "02_build_graphs_cpa.py",
+        "05A_build_candidate_pairs.py",
+        "16_gat_feature_ablation_large.py",
+        "16_train_gat_cpa_only.py",
+        "17_train_gat_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": true
+    },
+    {
+      "feature": "tcpa",
+      "classification": "future_derived_or_label_proxy",
+      "source_scripts": [
+        "02_build_graphs.py",
+        "02_build_graphs_cpa.py",
+        "06_compute_cpa.py",
+        "16_gat_feature_ablation_large.py",
+        "16_train_gat_cpa_only.py",
+        "17_train_gat_no_cpa.py",
+        "18_final_evaluation_package.py"
+      ],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "dcpa",
+      "classification": "future_derived_or_label_proxy",
+      "source_scripts": [
+        "02_build_graphs.py",
+        "02_build_graphs_cpa.py",
+        "06_compute_cpa.py",
+        "16_gat_feature_ablation_large.py",
+        "16_train_gat_cpa_only.py",
+        "17_train_gat_no_cpa.py",
+        "18_final_evaluation_package.py",
+        "20_train_xgboost_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "future_position",
+      "classification": "future_information",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "future_altitude",
+      "classification": "future_information",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "future_speed",
+      "classification": "future_information",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "future_heading",
+      "classification": "future_information",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "conflict",
+      "classification": "target",
+      "source_scripts": [
+        "02_build_graphs.py",
+        "02_build_graphs_cpa.py",
+        "02_build_graphs_old.py",
+        "06_compute_cpa.py",
+        "06_weather_analysis.py",
+        "18_final_evaluation_package.py",
+        "19_final_prediction_evaluation.py",
+        "19_freeze_final_results.py",
+        "20_train_xgboost_final.py",
+        "20_train_xgboost_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "conflict_label",
+      "classification": "target",
+      "source_scripts": [],
+      "allowed_for_final_predictor": false
+    },
+    {
+      "feature": "label",
+      "classification": "target",
+      "source_scripts": [
+        "02_build_graphs.py",
+        "02_build_graphs_old.py",
+        "03_train_gat.py",
+        "04_evaluate.py",
+        "06_compute_cpa.py",
+        "06_weather_analysis.py",
+        "16_train_gat_cpa_only.py",
+        "17_train_gat_no_cpa.py",
+        "18_final_evaluation_package.py",
+        "19_final_prediction_evaluation.py",
+        "19_freeze_final_results.py",
+        "20_train_xgboost_final.py",
+        "20_train_xgboost_no_cpa.py"
+      ],
+      "allowed_for_final_predictor": false
+    }
+  ],
+  "critical_exclusions": [
+    "tcpa",
+    "dcpa",
+    "future_position",
+    "future_altitude",
+    "future_speed",
+    "future_heading",
+    "conflict_label",
+    "label"
+  ]
+}

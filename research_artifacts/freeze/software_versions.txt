@@ -1,0 +1,9 @@
+Python 3.11.15
+Python: 3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:29:05) [Clang 19.1.7 ]
+PyTorch: 2.13.0
+MPS available: True
+CUDA available: False
+PyTorch Geometric: 2.8.0.post1
+NumPy: 2.4.6
+Pandas: 3.0.5
+Scikit-learn: 1.9.0

@@ -1,0 +1,32 @@
+{
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:29:05) [Clang 19.1.7 ]",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "processor": "arm",
+  "files": {
+    "processed_data/candidate_pairs_no_leakage.csv": {
+      "bytes": 144801638,
+      "sha256": "b98309e75c4260a4dc907c417ed8de0846f1cecdfa41d86607725801cac28e0d"
+    },
+    "processed_data/graphs_large.pt": {
+      "bytes": 121788701,
+      "sha256": "aa27eb979160efbc6792921fd315d8a5f3f34000d79123ac2c0bb2fa721268cf"
+    },
+    "processed_data/train_graphs.pt": {
+      "bytes": 82709541,
+      "sha256": "3b607e0865521a820350b3ac76101931f38e4eb80b4dcdc6fb2dc08da26dbdc5"
+    },
+    "processed_data/val_graphs.pt": {
+      "bytes": 21771009,
+      "sha256": "c337d015d5846deae2106154656e964386ee048f55e0020c8486ec66b357f7de"
+    },
+    "processed_data/test_graphs.pt": {
+      "bytes": 16801935,
+      "sha256": "aa06b14e889ebecba7645b95f20c441317fd9290953d2da589d0a32f622563e8"
+    },
+    "models/conflict_gat_no_cpa.pth": {
+      "bytes": 82491,
+      "sha256": "b5cfe387446083c03f2670e405147e22627fa2395ed854ca6637561d61ab572b"
+    }
+  },
+  "git_commit": "64a1d2901afdb36853e8e1b5d1159dcb3fd0cac9"
+}
