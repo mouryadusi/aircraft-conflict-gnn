@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+torch==2.13.0
+torch-geometric==2.8.0.post1

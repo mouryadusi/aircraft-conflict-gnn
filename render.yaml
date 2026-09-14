@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: aircraft-conflict-gnn
+    runtime: python
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
